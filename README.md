@@ -27,11 +27,11 @@ sudo apt update && sudo apt install -y python3 python3-venv python3-pip curl wge
 # 📥 2. Download Node Script
 
 ```bash
-curl -sSL https://raw.githubusercontent.com/ABHIEBA/Gensyn/main/node.sh | bash
+curl -sSL https://raw.githubusercontent.com/Cryptoprofezor/Gensyn-Installer/main/node.sh | bash
 ```
 
 ```bash 
-cd $HOME && [ -d rl-swarm ] && rm -rf rl-swarm; git clone https://github.com/ABHIEBA/rl-swarm.git && cd rl-swarm
+cd $HOME && [ -d rl-swarm ] && rm -rf rl-swarm; git clone https://github.com/gensyn-ai/rl-swarm.git && cd rl-swarm
 ```
 
 # 🎯 Step 4: Launch Dedicated Node Screen (Runs in Background)
