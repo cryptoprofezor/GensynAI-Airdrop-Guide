@@ -52,7 +52,7 @@ Ctrl + A, then D
 
 ```bash
 python3 -m venv .venv && . .venv/bin/activate && ./run_rl_swarm.sh
-```
+
 
 📊 Node Dashboard
 Track your performance here 👉 https://dashboard.gensyn.ai
