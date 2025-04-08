@@ -5,7 +5,7 @@
 </div>
 
 
-## System Requirements 🖥️
+## 🖥️ System Requirements
 
 - Minimum 16 GB RAM VPS or PC
 - (Optional) NVIDIA GPU (3090/4090)
