@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🚀 Gensyn AI Airdrop Node Setup Guide (Mac/Linux/VPS)
+# 🚀 Gensyn AI Airdrop Node Setup Guide By MCT
 
 </div>
 
@@ -13,7 +13,7 @@
 
 **⚠️ Warning: This node won’t run properly on low-spec devices. Use a VPS or high-performance machine to avoid crashes or lag**
 
-# 🚀 Step-by-Step Setup
+# 🚀 Step-by-Step Guide
 🔧 1. Update & Install Dependencies
 
 ```bash 
