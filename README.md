@@ -31,7 +31,7 @@ curl -sSL https://raw.githubusercontent.com/Cryptoprofezor/Gensyn-Installer/main
 ```
 
 ```bash 
-cd $HOME && [ -d rl-swarm ] && rm -rf rl-swarm; git clone https://github.com/gensyn-ai/rl-swarm.git && cd rl-swarm
+cd $HOME && [ -d rl-swarm ] && rm -rf rl-swarm; git clone https://github.com/cryptoprofezor/rl-swarm.git && cd rl-swarm
 ```
 
 # 🎯 Step 4: Launch Dedicated Node Screen (Runs in Background)
