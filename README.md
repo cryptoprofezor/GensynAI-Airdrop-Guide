@@ -42,15 +42,13 @@ screen -S gensyn
 
 🔌 USE This Command To Detach from Screen 
 
-```bash 
-
-Ctrl + A, then D
-
-```
+ `Ctrl + A, then D`
 
 # 🐍⚙️ Step 5: Create Python Virtual Environment & Run Node
 
-<kbd> python3 -m venv .venv && . .venv/bin/activate && ./run_rl_swarm.sh <kbd>
+```bash 
+python3 -m venv .venv && . .venv/bin/activate && ./run_rl_swarm.sh
+```
 
 📊 Node Dashboard
 Track your performance here 👉 https://dashboard.gensyn.ai
