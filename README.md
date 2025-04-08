@@ -5,11 +5,11 @@
 </div>
 
 
-# System Requirements 🖥️
+## System Requirements 🖥️
 
-. Minimum 16 GB RAM VPS or PC
-. (Optional) NVIDIA GPU (3090/4090)
-. Ubuntu 20.04 or 22.04
+- Minimum 16 GB RAM VPS or PC
+- (Optional) NVIDIA GPU (3090/4090)
+- Ubuntu 20.04 or 22.04
 
 **⚠️ Warning: This node won’t run properly on low-spec devices. Use a VPS or high-performance machine to avoid crashes or lag**
 
