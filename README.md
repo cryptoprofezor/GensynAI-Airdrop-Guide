@@ -40,7 +40,7 @@ cd $HOME && [ -d rl-swarm ] && rm -rf rl-swarm; git clone https://github.com/ABH
 screen -S gensyn
 ```
 
-🔌 USE This Command To Detach from Screen 
+🔌 USE This To Detach from Screen 
 
  `Ctrl + A, then D`
 
