@@ -59,13 +59,13 @@ python3 -m venv .venv && . .venv/bin/activate && ./run_rl_swarm.sh
 # 🛠️ If You See This Error API Key is to be Activated Then Use This 3 Commands
 
 ```bash 
-- sudo npm install --unsafe-perm -g ngrok
+sudo npm install --unsafe-perm -g ngrok
 ```
 ```bash
-- ngrok authtoken
+ngrok authtoken
 ```
 ```bash
-- ngrok http 3000
+ngrok http 3000
 ```
 
 📊 Node Dashboard
