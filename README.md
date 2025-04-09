@@ -50,14 +50,12 @@ screen -S gensyn
 python3 -m venv .venv && . .venv/bin/activate && ./run_rl_swarm.sh
 ```
 
-<div align="center">
-
-# ⚠️ Troubleshooting Errors 
-
-</div>
 
 
-## 🛠️ If You See This Error API Key is to be Activated Then Use This 3 Commands
+## ⚠️ Troubleshooting Errors 
+
+
+# 🛠️ If You See This Error API Key is to be Activated Then Use This 3 Commands
 
 ```bash 
 sudo npm install --unsafe-perm -g ngrok
@@ -67,6 +65,18 @@ ngrok authtoken
 ```
 ```bash
 ngrok http 3000
+```
+
+`Ctrl + c` Then Retry With The Start Command Now it will work 
+
+Make Sure to Save Your ORG_ID Node Name, Peer ID Etc
+
+## 🔒 VPS USERS Export Your Swarm.Pem File
+
+VPS Users Must Export Your `Swarm.pem` File From Your VPS Server to Your Local PC Use The Command Below And Extract
+
+```bash
+scp roo@YourIP:/root/rl-swarm/swarm.pem .
 ```
 
 📊 Node Dashboard
