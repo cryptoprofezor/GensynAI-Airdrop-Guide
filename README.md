@@ -75,7 +75,7 @@ Make Sure to Save Your ORG_ID Node Name, Peer ID Etc
 VPS Users Must Export Your `Swarm.pem` File From Your VPS Server to Your Local PC Use The Command Below And Extract
 
 ```bash
-scp roo@YourIP:/root/rl-swarm/swarm.pem .
+scp root@YourIP:/root/rl-swarm/swarm.pem .
 ```
 
 📊 Node Dashboard
