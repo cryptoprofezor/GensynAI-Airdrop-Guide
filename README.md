@@ -31,7 +31,7 @@ curl -sSL https://raw.githubusercontent.com/Cryptoprofezor/Gensyn-Installer/main
 ```
 
 ```bash 
-cd $HOME && rm -rf gensyn-testnet && git clone https://github.com/cryptoprofezor/GensynAI-Airdrop-Guide.git && chmod +x GensynAI-Airdrop-Guide/gensyn.sh && ./GensynAI-Airdrop-Guide/gensyn.sh
+cd $HOME && rm -rf GensynAI-Airdrop-Guide && git clone https://github.com/cryptoprofezor/GensynAI-Airdrop-Guide.git && cd GensynAI-Airdrop-Guide && chmod +x gensyn.sh && ./gensyn.sh
 ```
 
 # 🎯 Step 4: Launch Dedicated Node Screen (Runs in Background)
