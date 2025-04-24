@@ -47,7 +47,9 @@ screen -S gensyn
 # 🐍⚙️ Step 5: Create Python Virtual Environment & Run Node
 
 ```bash 
-python3 -m venv .venv && . .venv/bin/activate && ./run_rl_swarm.sh
+cd ~
+chmod +x gensyn-testnet/gensyn.sh
+./gensyn-testnet/gensyn.sh
 ```
 
 
