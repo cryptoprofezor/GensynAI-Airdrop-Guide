@@ -32,14 +32,15 @@ chmod +x gensyn.sh
 ## 🚀 Step 3: Run Node Next Day
 
 ```bash
-cd GensynAI-Airdrop-Guide
-chmod +x gensyn.sh
-./gensyn.sh
+cd ~/rl-swarm
+. .venv/bin/activate
+python3 trainer/gensyn/testnet_grpo_trainer.py
 ```
 
 ## 🔄 Backup Your Node
 
 ```bash
+cd ~/GensynAI-Airdrop-Guide
 chmod +x backup.sh
 ./backup.sh
 ```
