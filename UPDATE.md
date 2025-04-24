@@ -20,10 +20,18 @@ cd ~
 rm -rf GensynAI-Airdrop-Guide rl-swarm
 ```
 
-## 📥 Step 2: Install New Setup
+## 📥 Step 2: Install New Setup (ONE-TIME ONLY)
 
 ```bash
 git clone https://github.com/cryptoprofezor/GensynAI-Airdrop-Guide.git
+cd GensynAI-Airdrop-Guide
+chmod +x gensyn.sh
+./gensyn.sh
+```
+
+## 🚀 Step 3: Run Node Next Day
+
+```bash
 cd GensynAI-Airdrop-Guide
 chmod +x gensyn.sh
 ./gensyn.sh
