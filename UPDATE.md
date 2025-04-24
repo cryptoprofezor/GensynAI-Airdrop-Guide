@@ -23,8 +23,8 @@ rm -rf GensynAI-Airdrop-Guide rl-swarm
 ## 📥 Step 2: Install New Setup
 
 ```bash
-git clone https://github.com/cryptoprofezor/gensyn-testnet.git
-cd gensyn-testnet
+git clone https://github.com/cryptoprofezor/GensynAI-Airdrop-Guide.git
+cd GensynAI-Airdrop-Guide
 chmod +x gensyn.sh
 ./gensyn.sh
 ```
