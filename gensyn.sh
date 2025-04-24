@@ -15,28 +15,27 @@ cd $HOME
 if [ -f "$SWARM_DIR/swarm.pem" ]; then
     echo -e "${BOLD}${YELLOW}You already have an existing ${GREEN}swarm.pem${YELLOW} file.${NC}\n"
     echo -e "${BOLD}${YELLOW}Do you want to:${NC}"
-    echo -e "${BOLD}1) Use the existing swarm.pem${NC}"
-    echo -e "${BOLD}${RED}2) Delete existing swarm.pem and start fresh${NC}"
+    echo -e "${BOLD}1) Use the existing swarm.pem (safe update)${NC}"
+    echo -e "${BOLD}${RED}2) Delete existing rl-swarm and start fresh${NC}"
 
     while true; do
         read -p $'\e[1mEnter your choice (1 or 2): \e[0m' choice
         if [ "$choice" == "1" ]; then
             echo -e "\n${BOLD}${YELLOW}[✓] Using existing swarm.pem...${NC}"
-            mv "$SWARM_DIR/swarm.pem" "$HOME_DIR/"
-            mv "$TEMP_DATA_PATH/userData.json" "$HOME_DIR/" 2>/dev/null
-            mv "$TEMP_DATA_PATH/userApiKey.json" "$HOME_DIR/" 2>/dev/null
 
-            rm -rf "$SWARM_DIR"
+            echo -e "${BOLD}${YELLOW}[✓] Backing up important files...${NC}"
+            mkdir -p "$HOME/gensyn-backup"
+            cp "$SWARM_DIR/swarm.pem" "$HOME/gensyn-backup/"
+            cp "$TEMP_DATA_PATH/userData.json" "$HOME/gensyn-backup/" 2>/dev/null
+            cp "$TEMP_DATA_PATH/userApiKey.json" "$HOME/gensyn-backup/" 2>/dev/null
 
-            echo -e "${BOLD}${YELLOW}[✓] Cloning fresh repository...${NC}"
-            cd $HOME && git clone https://github.com/zunxbt/rl-swarm.git > /dev/null 2>&1
+            echo -e "${BOLD}${YELLOW}[✓] Pulling latest updates from repo...${NC}"
+            cd "$SWARM_DIR"
+            git pull origin main > /dev/null 2>&1
 
-            mv "$HOME_DIR/swarm.pem" rl-swarm/
-            mv "$HOME_DIR/userData.json" rl-swarm/modal-login/temp-data/ 2>/dev/null
-            mv "$HOME_DIR/userApiKey.json" rl-swarm/modal-login/temp-data/ 2>/dev/null
             break
         elif [ "$choice" == "2" ]; then
-            echo -e "${BOLD}${YELLOW}[✓] Removing existing folder and starting fresh...${NC}"
+            echo -e "${BOLD}${YELLOW}[✓] Deleting rl-swarm and starting fresh...${NC}"
             rm -rf "$SWARM_DIR"
             cd $HOME && git clone https://github.com/zunxbt/rl-swarm.git > /dev/null 2>&1
             break
@@ -66,7 +65,6 @@ pip install -r requirements.txt
 echo -e "${BOLD}${GREEN}🚀 Ready! Open your browser and activate the API using localhost:3000${NC}"
 echo -e "${BOLD}${YELLOW}Once API is activated, the node will start.${NC}"
 
-# Wait for user to activate the API
 read -p $'\e[1mPress ENTER after activating the API from localhost:3000...\e[0m'
 
 echo -e "${BOLD}${YELLOW}[✓] Running Gensyn node trainer...${NC}"
